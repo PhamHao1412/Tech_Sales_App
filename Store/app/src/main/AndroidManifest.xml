@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.macmavenapp">>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/apple3"
+        android:label="Mac Maven"
+        android:theme="@style/Theme.FashionStoreApp"
+        tools:replace="android:theme,android:label"
+        android:fontFamily="@font/be_vietnam"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.LoginActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.MainActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.SignUpActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.ShowDetailActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.UserActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.ProductsActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.CartActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.ForgotPasswordActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.EditProfileActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.OrderActivity" android:exported="true"></activity>
+        <activity android:name=".Activity.AdminActivity" android:exported="true"></activity>
+        <activity
+            android:name=".Activity.CheckOutActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="demozpdk"
+                    android:host="app" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Activity.AddressActivity"></activity>
+
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
+<!--    A2:57:36:D4:0B:0C:04:E7:76:81:AB:F5:CE:F7:08:82:5E:67:E5:A1-->
